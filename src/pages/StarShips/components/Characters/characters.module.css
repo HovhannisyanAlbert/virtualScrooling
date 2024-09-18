@@ -1,0 +1,106 @@
+.characterWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.character {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 200px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.characterContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.characterName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.noCharacters {
+  font-size: 1.1rem;
+  color: #888;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .characterWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .character {
+    width: 90%;
+  }
+}
+.sortBttn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sortBttn button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.asc {
+  background-color: #4caf50;
+  color: white;
+}
+
+.asc:hover {
+  background-color: #45a049;
+}
+
+.desc {
+  background-color: #f44336;
+  color: white;
+}
+
+.desc:hover {
+  background-color: #da190b;
+}
+
+.back {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #2196f3;
+  color: white;
+  margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back:hover {
+  background-color: #0b7dda;
+}
